@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="토끼.png" width="200" height="200">
+    <h2><p>토끼에 대해서</p></h2>
+    <a href="토끼.png"><img src="토끼.png" width="300" height="200" ></a>
+    <figure>
+        <a href="토끼.png">
+            <figcaption>토끼</figcaption></a>
+        <table border="1">
+            <tr>
+            <td><img src="토끼.png" alt="토끼" width="80" height="80"></td>
+            <td>토끼의 이해<br>토끼<br>하얀토끼</td>
+        </tr></table>
+        <figcaption>[그림1] 토끼소개</figcaption></a>
+    </figure>
+</body>
+</html>
