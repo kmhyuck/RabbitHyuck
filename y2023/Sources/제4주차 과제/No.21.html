@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>연습문제</title>
+        <style type="text/CSS">
+            #first {background-color: skyblue;}
+            th,td {width: 100px; height: 50px;}
+            .cell {width: 80px; height: 50px;}
+            th,td {text-align: center;}
+            #layoutcell {table-layout: auto;}
+            #allcell {border-collapse: collapse;}
+        </style>
+    </head>
+    <body>
+        <h1>시간표</h1>
+        <table border="1" id="allcell" id="layoutcell">
+            <tr id="first">
+                <th>교시</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+            <!-- 1 -->
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td rowspan="3">자료구조와알고리즘</td>
+                <td></td>
+                <td rowspan="3">모바일프로그래밍</td>
+            </tr>
+            <!-- 2 -->
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td rowspan="2">컴퓨터응용</td>
+                <td></td>
+            </tr>
+            <!-- 3 -->
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- 4 -->
+            <tr>
+                <td>4</td>
+                <td colspan="5">점심시간</td>
+            </tr>
+            <!-- 5 -->
+            <tr>
+                <td>5</td>
+                <td rowspan="2">멀티미디어 개론</td>
+                <td rowspan="3">모바일프로그래밍</td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">컴퓨터응용</td>
+            </tr>
+            <!-- 6 -->
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- 7 -->
+            <tr>
+                <td>7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- 8 -->
+            <tr>
+                <td>8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
