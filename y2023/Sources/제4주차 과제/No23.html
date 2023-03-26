@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .sleep {
+            width: 95%;
+            height: 455px;
+            position: relative; 
+            margin: 20px;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+        }
+        header>h1 ,
+        header>p {
+            margin: 15px;
+        }
+        .snack {
+            position: relative;
+        }
+        nav {
+            width: 94%;
+            height: 40px;
+            background-color: wheat;
+            position: absolute;
+            right:0px;
+            top: -10px;
+            padding-left: 50px;
+            line-height: 40px;
+        }
+        span {
+            display: inline-block;
+            /* margin-top: 10px; */
+            padding: 0 20px;
+        }
+        .rice {
+            border: 3px solid black;
+            width: 55%;
+            position: absolute;
+            top: 26px;
+        }
+        article{
+            background-color: mediumaquamarine;
+            margin: 20px 0;
+        }
+        article > h1 ,
+        aside > h1 {
+            padding: 10px;
+        }
+        article > p ,
+        aside > p {
+            padding: 5px;
+        }
+        aside {
+            position: absolute;
+            right: 0;
+            top: 30px;
+            background-color: black;
+            color: white;
+            width: 46%;
+            height: 225px;
+        }
+        hr {
+            width: 90%;
+            margin: 0 auto;
+        }
+        footer {
+            position: absolute;
+            background-color: black;
+            color: white;
+            bottom: 0;
+            width: 100%;
+            padding: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sleep">
+        <header>
+            <h1>header</h1>
+            <p>header의 두 번째 제목입니다.</p>
+        </header>
+        <div class="snack">
+            <!-- nav=감싸기 -->
+            <nav>
+                <span>메뉴 1</span>
+                <span>메뉴 2</span>
+                <span>메뉴 3</span>
+                <span>메뉴 4</span>
+                <span>메뉴 5</span>
+            </nav>
+            <div class="rice">
+                <article>
+                    <h1>article 1</h1>
+                    <p>article 1의 본문입니다.</p>
+                </article>
+                <hr>
+                <article>
+                    <h1>article 2</h1>
+                    <p>article 2의 본문입니다.</p>
+                </article>
+            </div>
+            <aside>
+                <h1>aside</h1>
+                <p>aside의 본문입니다.</p>
+            </aside>
+        </div>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </div> 
+</body>
+</html>
