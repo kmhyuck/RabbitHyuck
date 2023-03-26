@@ -16,15 +16,17 @@
      #seventh {background-color: lightcoral;}
      #eightth {background-color: teal;}
      #ninth {background-color: salmon;}
-     #hamburger2 {table-layout: fixed; display: table;}
      tr,th,td{text-align: center;}
-     #hamburger {border-collapse: collapse;}
-      th,td{width: 100px; height: 50px;}
+     #hamburger {border-collapse: collapse; table-layout: fixed; display: table;}
+      th{width: 100px; height: 50px;}
+      td {
+        width:100px;   height: 75px ;
+      }
     </style>
 </head>
 <body>
     <h1>2023학년도 1학기 시간표</h1>
-    <table border="1" id="hamburger" id="hamburger2">
+    <table border="1" id="hamburger" >
         </colgroup>
         <tr id="first">
             <th>시간</th>
