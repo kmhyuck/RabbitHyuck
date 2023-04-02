@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divgroup {
+         padding: 3px;
+         color:white;
+         margin-bottom: 3px;
+         display: inline-block;
+        }
+        @media all and (max-width:600px)
+        {
+            .divgroup 
+            {
+                background-color: blue;
+                color: black;
+                width: 80%;
+                border-style: dotted;
+                background-color: white;
+                width: 200px;
+                height: 150px;
+            }
+        }
+        @media all and (min-width:600px) 
+        and (max-width:1000px)
+        {
+            .divgroup 
+            {
+                background-color: yellow;
+                width: 200px;
+                height: 150px;
+            }
+        }
+        @media all and (min-width:1000px)
+        {
+            .divgroup
+            {
+                background:blue ;
+                font-size: 20px;
+                width: 200px;
+                height: 150x;
+                text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+        <div class="divgroup">1번 영역</div>
+        <div class="divgroup">2번 영역</div>
+        <div class="divgroup">3번 영역</div>
+        <div class="divgroup">4번 영역</div>
+        <div class="divgroup">5번 영역</div>
+      </div>
+</body>
+</html>
