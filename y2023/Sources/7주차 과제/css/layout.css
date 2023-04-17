@@ -1,0 +1,50 @@
+/* 저자: 임순범 박희민 */
+/* 본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음 */
+
+body { margin:0; padding:0; line-height: 1.2em; font-size: 0.75em; line-height: 1.2em; }
+
+.wrap { margin:0; margin-right: auto; margin-left: auto; }
+
+header { vertical-align: middle; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+#logo { float: left; vertical-align: middle; margin:30px 0 0 20px; }
+
+.clear { clear:both; }
+
+hr { clear: both; }
+
+nav { margin:0 0 20px 0; float:left; } 
+
+nav ul li { float:left;    margin:0 5px; list-style:none; }
+
+nav a { display:block; padding:5px; }
+
+footer #copyright { margin:20px 0 0 10px; float:left;    }
+
+footer #SNS { margin:10px 20px 0 0 ; float:right;    }
+
+aside { margin: 5px; }
+
+article { margin:5px 0 10px 0; } 
+
+#login { margin: 30px; }
+
+#login fieldset span { display: inline-block; }
+
+#signup { margin: 30px; }
+
+#signup fieldset span { display: inline-block; vertical-align: middle; }
+
+#signup fieldset input { vertical-align: middle; }
+
+#order { margin: 30px; }
+
+.booklist { margin: 10px; padding: 5px; }
+
+.booklist .head { margin: 15px 0 0 10px; } 
+
+.booklist ul li { float: left; margin: 5px 5px 10px 5px; list-style-type: none; }
