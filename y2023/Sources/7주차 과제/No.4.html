@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta authors="임순범 박희민"/> 
+  <meta copyright="본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음"/>
+  <title>Welcome to SM서점</title>
+  <link rel="stylesheet" type="text/css" href="./size.css"/>
+  <link rel="stylesheet" type="text/css" href="./layout.css"/>
+  <link rel="stylesheet" type="text/css" href="./presennation.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a id="logo" href="main.html"> SM Bookstore </a>
+      <span class="right" style="padding: 30px 10px;">
+        <a href="login.html" target="display_area">로그인</a> |
+        <a href="signup.html" target="_blank">회원가입</a>
+      </span>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="domestic_books.html" target="display_area">국내도서</a></li>
+        <li><a href="foreign_books.html" target="display_area">해외번역도서</a></li>
+        <li><a href="music.html" target="display_area">음반/DVD</a></li>
+        <li><a href="review.html" target="display_area">도서리뷰</a></li>
+        <li class="right"><a href="order.html" target="display_area">주문하기</a></li>
+      </ul>
+    </nav>
+
+    <hr/>
+
+    <article class="left">
+      <iframe name="display_area" src="이미지/books.jpg" width="600px" height="500px"></iframe>
+    </article>
+
+    <aside class="right">
+      <button id="save_favorite" style="width:100px" disabled>관심도서등록</button><br/>
+      <button id="view_favorite" style="width:100px" disabled>관심도서보기</button><br/>
+      <button id="album_btn" style="width:100px" disabled>앨범만들기</button><br/>
+      <button id="location" style="width:100px" disabled>현재위치</button>
+    </aside>
+
+    <hr/>
+
+    <footer>  
+      <div id="copyright">
+        Copyright (c) 2016 SM Bookstore Inc. All rights reserved
+      </div>
+      <div id="SNS">
+        <a href="http://facebook.com" target="_blank">
+          <img src="images/facebook.png" height="32" alt="Facebook">
+        </a>
+        <a href="http://twitter.com" target="_blank">
+          <img src="images/twitter.png" height="32" alt="Twitter">
+        </a>
+        <a href="http://instagram.com" target="_blank">
+          <img src="images/instagram.png" height="32" alt="Instagram">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
