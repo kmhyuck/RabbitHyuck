@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서적 주문 양식</title>
+</head>
+<body id="order">
+    <div class="head">서적 주문 양식</div>
+    <form action="">
+        <p>주문서</p>
+        <table border="1">
+            <tr>
+            <th>책 제목</th>
+            <th>가격</th>
+            <th>수량</th>
+            <th>합계</th>
+            </tr>
+            <tr>
+                <td>컴퓨터와 IT기술의 이해 [개정판-2판]</td>
+                <td>27,000원</td>
+                <td><select name="order" id="order">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td>소셜미디어의 이해와 활용</td>
+                <td>21,000원</td>
+                <td><select name="order" id="ordefr">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>비즈니스 정보 시스템</td>
+                <td>28,000원</td>
+                <td><select name="order" id="order">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>합계</td> <td>&nbsp;</td>
+                <td><input type="text" size="2" value="0"/></td>
+                <td><input type="text" size="6" value="0">원</td>
+            </tr>
+            </table><br>
+                <input type="button" value="합계계산" disabled/>
+                <input type="reset" value="초기화" disabled/>
+                <input type="submit" value="주문하기" disabled/>            
+    </form>
+</body>
+</html>
