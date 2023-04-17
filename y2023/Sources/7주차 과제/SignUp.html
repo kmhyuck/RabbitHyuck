@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta authors="임순범 박희민"/>
+<meta copyright="본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음"/>
+<title> Signup Page </title>
+<link rel="stylesheet" type="text/css" href="css/style-size.css"/>
+<link rel="stylesheet" type="text/css" href="css/style-layout.css"/>
+<link rel="stylesheet" type="text/css" href="css/style-presentation.css"/>
+</head>
+<body id="signup">
+    <form>    
+      <fieldset>
+        <legend>회원가입</legend>
+        <span>사용자 아이디</span>
+        <input id="username2" type="text"/>
+        <input id="dup_check" type="button" value="중복체크" disabled/><br/>
+        <span>비밀번호</span> <input id="pass1" type="password"><br/>
+        <span>비밀번호 확인</span> <input id="pass2" type="password"><br/>
+        <span>이름</span> <input type="text"><br/>
+        <span>전화번호</span> <input type="tel"/><br/>
+        <span>이메일</span> <input type="email"><br/>
+        <span>생일</span> <input type="date"/><br/>
+        <span>연령대</span>
+        <select>
+            <option>10대 이하</option>
+            <option>20대</option>
+            <option>30대</option>
+            <option>40대</option>
+            <option>50대 이상</option>
+        </select><br/>
+        <span>관심분야</span>
+        <label>인문학
+          <input type="checkbox" value="humanity" name="interest"></label>
+        <label>교육
+          <input type="checkbox" value="education" name="interest"></label>
+        <label>예술
+          <input type="checkbox" value="art" name="interest"></label>
+        <label>컴퓨터
+          <input type="checkbox" value="computer" name="interest"></label>
+        <label>기타분야
+          <input type="checkbox" value="etc" name="interest"></label>
+        <br/>
+        <span>배경 색상</span> <input type="color"/><br/>
+        간단한 자기소개<br/>
+        <textarea cols="30" rows="5">간단한 자기소개를 써 주세요.</textarea>
+      </fieldset>
+      <input id="signup_button" type="submit" value="회원가입" disabled/>
+      <input id="reset2" type="button" value="취소" disabled/>
+    </form> 
+</body>
+</html>
