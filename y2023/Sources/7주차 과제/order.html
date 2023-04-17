@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta authors="임순범 박희민"/> 
+<meta copyright="본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음"/>
+<title> Order Page </title>
+<link rel="stylesheet" type="text/css" href="css/style-size.css"/>
+<link rel="stylesheet" type="text/css" href="css/style-layout.css"/>
+<link rel="stylesheet" type="text/css" href="css/style-presentation.css"/>
+</head>
+<body id="order">
+<div class="head"> 서적 주문 양식 </div>
+<form action="">
+    <p> 주문서 </p>
+    <table>
+        <tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr>
+        <tr>
+            <td> 컴퓨터와 IT기술의 이해 [개정판-2판] </td> <td> 27,000원 </td>
+            <td> <input type="text" size= "2" value="0"/> </td>
+            <td> <input type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 소셜미디어의 이해와 활용 <td> 21,000원 </td>
+            <td> <input type="text" size= "2" value="0"/> </td>
+            <td> <input type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 비즈니스 정보 시스템 </td> <td> 28,000원 </td>
+            <td> <input type="text" size= "2" value="0"/> </td>
+            <td> <input type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 합계 </td> <td> &nbsp; </td>
+            <td> <input type="text" size= "2" value="0"/> </td>
+            <td> <input type="text" size= "6" value="0"/> 원</td>
+        </tr>
+    </table> <br />
+    <input type="button" value="합계계산" disabled/>
+    <input type="reset" value="초기화" disabled/>
+    <input type="submit" value="주문하기" disabled/>
+</form>
+</body>
+</html>
