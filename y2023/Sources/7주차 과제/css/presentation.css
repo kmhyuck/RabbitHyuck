@@ -1,0 +1,61 @@
+/* 저자: 임순범 박희민 */
+/* 본 예제는 [HTML5 웹프로그래밍 입문] 교재를 이용한 교육에만 사용할 수 있음 */
+
+body { background-color: gray; font-size: 0.75em; line-height: 1.2em; }
+
+img { border:none; }
+
+.wrap { text-align:left; background-color: white; }
+
+a { text-decoration: none; }
+
+#logo { color: darkblue; font-size: 48px; }
+
+header .right a:hover { color: gray; }
+
+input { color:blue; }
+
+nav { background-color: aqua; }
+    
+nav ul { list-style:none; font-family: Verdana, Geneva, sans-serif; font-size: 14px;
+    font-weight: bold; color: #ff0099;
+}
+
+nav a { text-decoration:none; color:#000000; border-style: hidden hidden solid hidden;
+    border-color: transparent;
+}
+
+nav a:hover { color:#2b4480;    border-color: blue; }
+
+footer #copyright { font-family: consolas; } 
+
+footer #SNS a { text-decoration: none; }
+
+#login, #signup, #order { background-color: #d8d8d8; }
+
+#order .head { font-size: 16px; font-weight: bolder; }
+
+#order table { border-collapse:collapse; }
+
+#order table td, th{ text-align: center; }
+
+#order table input { background-color: transparent; }
+
+#order table td, th, tr{ border: 1px solid silver; }
+
+.booklist { font-family: arial; background-color: #f0f0f0;
+    background-image: url(./images/cloud.jpg); background-repeat: no-repeat;
+	background-position: 0px 0px;	border:solid 3px steelblue; border-radius:10px;
+}
+
+.aerialview { background-image: url(./images/aerialview.jpg); }
+
+.booklist .head { font-size: 16px; font-weight: bolder; }
+
+.booklist ul li { float: left; font-size: 12px; list-style-type: none; }
+
+.musiclist ul li { font-size: 12px; font-weight: bold;
+    text-shadow: 0.2em 0.2em 0.2em white;
+}
+
+.booklist ul li img { border: solid; border-color: lightgray; border-width: 1px; }
