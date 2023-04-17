@@ -1,0 +1,27 @@
+.wrap { width:715px; min-height:600px; }
+
+header { height: 80px; }
+
+nav { width: 715px; }
+    
+nav a { height:20px; }
+
+footer { height:70px; }
+
+#login fieldset span { width: 80px; }
+
+#signup fieldset span { width: 90px; }
+
+#order table td, th{ width: 150px; height: 30px; }
+
+.booklist { height: 462px; }
+
+.booklist ul li { width: 150px; height: 180px; }
+
+.musiclist ul li { width: 530px; }
+
+.booklist ul li img { height: 100px; }
+
+.booklist ul li audio, video { width: 330px; }
+
+.booklist ul li video { height: 120px; }
