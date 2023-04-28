@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        row = prompt("행의 수를 입력하시오.");
+        col = prompt("열의 수를 입력하시오.");
+        document.write("<table border='1'> <tr>");
+        for(i=0;i<col;i++) {
+            document.write("<th> col" + (i + 1) + "</th>");
+        }
+        document.write("</tr>");
+        for(i=0;i<row;i++) {
+            document.write("<tr>");
+            for(j=0;j<col;j++) {
+                document.write("<td> (" + (i+1) + "," + (j+1) + ") </td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
