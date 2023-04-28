@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+</head>
+<body>
+    <script type="text/javascript">
+        num1 = prompt("숫자를 입력하세요.");
+        symbol = prompt("연산기호 입력하세요.");
+        num2 = prompt("숫자를 입력하세요.");
+
+        Number1 = parseInt(num1);
+        Number2 = parseInt(num2);
+
+        if(symbol == '+'){
+            result = Number1 + Number2;
+        } else if(symbol == '-') {
+            result = Number1 - Number2;
+        } else if(symbol == '*') {
+            result = Number1 * Number2;
+        } else if(symbol == '/') {
+            result = Number1 / Number2;
+        } else if(symbol == '%') {
+            result = Number1 % Number2;
+        }
+
+        document.write(result);
+    </script>
+</body>
+</html>
