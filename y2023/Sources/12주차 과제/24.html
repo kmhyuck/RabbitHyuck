@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <img id="img1" src="/라쿤1.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        <img id="img2" src="/라쿤2.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        <img id="img3" src="/라쿤3.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        <img id="img4" src="/라쿤4.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        <img id="img5" src="/라쿤5.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        <img id="img6" src="/라쿤6.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        <img id="img7" src="/라쿤7.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        <img id="img8" src="/라쿤8.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        <img id="img9" src="/라쿤9.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        <img id="img10" src="/라쿤10.jpeg" width="350px" height="200px"
+            style="position: absolute; left: 50px; top: 25px; visibility: hidden;">
+        
+        <script type="text/javascript">
+            var images = document.getElementsByTagName("img");
+            var sec = 0;
+
+            function NextImage() {
+                // if (sec < images.length) { 
+                    sec = sec % images.length;
+                    secM1 = (sec+1) % images.length;
+                    console.log [sec];
+                    console.log [secM1];
+                    images[sec].style.visibility = "hidden";
+                    images[secM1].style.visibility = "visible";
+                    sec++;
+                    setTimeout(NextImage, 1000);
+                // }
+            }
+            NextImage();
+        </script>
+    </body>
+</html> 
