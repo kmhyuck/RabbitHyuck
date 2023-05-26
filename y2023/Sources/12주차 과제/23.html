@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function calculate(operation) {
+                var a = document.getElementById("op1").value;
+                var b = document.getElementById("op2").value;
+                if (operation === "add") {
+                    result = parseInt(a) + parseInt(b);
+                } else if (operation === "subtract") {
+                    result = parseInt(a) - parseInt(b);
+                } else if (operation === "multiply") {
+                    result = parseInt(a) * parseInt(b);
+                } else if (operation === "divide") {
+                    result = parseInt(a) / parseInt(b);
+                }
+
+                document.getElementById("result").value = result;
+            }
+    </script>
+
+    <form>
+        <input id="op1" type="text" size="2"/> 
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select> 
+        <input id="op2" type="text" size="2"/>
+        <input type="button" value="=" onclick="calculate(document.getElementById('operation').value);"/>
+        <input id="result" type="text" size="2"/>
+    </form>
+
+    </body>
+</html>
