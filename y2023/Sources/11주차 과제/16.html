@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div id="button_area">
+        <input type="button" value="1"/>
+        <input type="button" value="2"/>
+        <input type="button" value="3"/>
+        <input type="button" value="Reset" onclick="resetValues(1, 2, 3)"/>
+    </div>
+    <script type="text/javascript">
+  var inputs = document.getElementsByTagName("input");
+for(var i=0; i<inputs.length - 1; i++){
+    inputs[i].onclick = plus;
+}
+
+function plus(event){
+    var btn = event.target;
+    var now = btn.value;
+    btn.value = (parseInt(now) + 1);
+}
+
+function resetValues(value1, value2, value3) {
+    inputs[0].value = value1;
+    inputs[1].value = value2;
+    inputs[2].value = value3;
+    }
+  </script>
+</body>
+</html>
