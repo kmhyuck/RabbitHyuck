@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "button_area"> </div>
+
+    <script type="text/javascript">
+        button_area = document.getElementById('button_area');
+
+        button1 = document.createElement("input");
+        button1.type = 'button';
+        button1.value = '자바스크립트에 의해서 동적으로 생성 및 삽입되었음(1)';
+        button_area.appendChild(button1);
+
+        button2 = document.createElement("input");
+        button2.type = 'button';
+        button2.value = '자바스크립트에 의해서 동적으로 생성 및 삽입되었음(2)';
+        button_area.appendChild(button2);
+
+        
+    </script>
+</body>
+</html>
