@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var today=new Date();
+            var M=today.getMonth()+1;
+            var D=today.getDate();
+            var day=today.getDay();
+            if (day=="1")
+                document.write("월요일")
+            else if(day=="2")
+                document.write("화요일")
+            else if(day=="3")
+                document.write("수요일")
+            else if(day=="4")
+                document.write("목요일")
+            else if(day=="5")
+                document.write("금요일")
+            else if(day=="6")
+                document.write("토요일")
+            else if(day=="7")
+                document.write("일요일")
+
+            document.write("<br/>"+M+"."+D+"<br/>");
+            
+        </script>
+    </body>
+</html>
