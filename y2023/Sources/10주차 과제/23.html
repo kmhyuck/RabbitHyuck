@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var numbers = [];
+
+            var count = prompt("생성할 배열의 요소 개수");
+
+            for (var i = 0; i < count; i++) {
+                var number = prompt("숫자");
+                numbers[i] = parseInt(number);
+            }
+
+            document.write(numbers+"<br/>")
+            var maximum=Math.max(...numbers);
+            var minimum=Math.min(...numbers);
+
+            document.write("Max:"+maximum+"<br/>");
+            document.write("Min:"+minimum);
+
+        </script>
+    </body>
+</html>
