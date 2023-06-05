@@ -1,0 +1,67 @@
+
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        img { display: inline-block; width: 7%; height: 10%;}
+    </style>
+</head>
+<body>
+    <h2>&nbsp; Drop Here</h2>
+    <div id="dropfield" style="border: solid 2px black; width: 50%; height: 40vh; display: inline-block;"></div>
+    <br>
+    <p id="name">파일 이름: </p>
+    <img id="racoon1" src="라쿤1.jpeg" alt="라쿤1" draggable="true">
+    <img id="racoon2" src="라쿤2.jpeg" alt="라쿤2" draggable="true">
+    <img id="racoon3" src="라쿤3.jpeg" alt="라쿤3" draggable="true">
+    <img id="racoon4" src="라쿤4.jpeg" alt="라쿤4" draggable="true">
+    <script type="text/javascript">
+    var imgs = document.getElementsByTagName("img");
+    var imgsf;
+    
+    imgs[0].ondragstart = function (e) {
+        e.dataTransfer.setData("text", e.target.id);
+        imgsf = '"/라쿤1.jpeg"';
+    }
+    
+    imgs[1].ondragstart = function (e) {
+        e.dataTransfer.setData("text", e.target.id);
+        imgsf = '"/라쿤2.jpeg"';
+    }
+    
+    imgs[2].ondragstart = function (e) {
+        e.dataTransfer.setData("text", e.target.id);
+        imgsf = '"/라쿤3.jpeg"';
+    }
+    
+    imgs[3].ondragstart = function (e) {
+        e.dataTransfer.setData("text", e.target.id);
+        imgsf = '"/라쿤4.jpeg"';
+    }
+    
+    var dropfield = document.getElementById("dropfield");
+
+    dropfield.ondragover = function (e) {
+        e.preventDefault();
+        e.target.style.background = 'gray';
+    }
+    var backgroundst = document.getElementById("dropfield").style;
+    
+    dropfield.ondrop = function (e){
+        e.preventDefault();
+        e.target.style.background = 'transparent';
+    
+        var file_name = e.dataTransfer.getData("text");
+        backgroundst.backgroundImage = 'url(' + imgsf + ')';
+        backgroundst.backgroundRepeat = 'no-repeat';
+        backgroundst.backgroundPosition = 'center';
+        backgroundst.backgroundSize = 'auto';
+    
+    }
+    </script>
+</body>
+</html>
+</body>
+</html>
