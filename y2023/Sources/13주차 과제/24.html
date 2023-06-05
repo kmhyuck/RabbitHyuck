@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="map" style="width: 600px; height: 400px;"></div>
+    <div id="display"></div>
+
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c18fc3aa135e4fb8f4a5bc071dac7e5b"></script>
+
+    <script type="text/javascript">
+        var mapContainer = document.getElementById("map");
+        var nLat, nLon, mapOption, map;
+
+        if (navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(myCallback);
+        } else {
+            alert("Geolocation이 지원되지 않는 기기입니다.");
+        }
+
+        function myCallback(myPosition){
+            nLat = myPosition.coords.latitude;
+            nLon = myPosition.coords.longitude;
+            document.getElementById("display").innerHTML = "위  치 정보: 위도: " + nLat + " 경도: " + nLon;
+            mapOption = {
+                center: new kakao.maps.LatLng(nLat, nLon),
+                level: 5
+            };
+            map = new kakao.maps.Map(mapContainer, mapOption);
+        }
+    </script>
+</body>
+</html>
